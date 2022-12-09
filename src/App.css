@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.ui.black{
+  padding: 30px 0px;
+  text-align: center;
+  background-color: black;
+  color: antiquewhite;
+  font-size: x-large;
+}
+.ui.grid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ui.segment{
+  width: 100px;
+  height: 100px;
+}

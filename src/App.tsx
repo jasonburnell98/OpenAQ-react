@@ -1,26 +1,14 @@
-import { Container, Grid, Header } from "semantic-ui-react";
-
-import "semantic-ui-css/semantic.min.css";
-import CityInfo from "./components/cityInfo";
-import AqInfoTable from "./components/aqInfoTable";
+import "./App.css";
+import { Container } from "semantic-ui-react";
+import AirQuality from "./components/air-quality";
 
 function App() {
   return (
-    <Container>
-      <Header as="h2">City Air Quality</Header>
-      <Grid>
-        <Grid.Row columns={2}>
-          <Grid.Column>
-            <CityInfo cityIndex="city1" />
-          </Grid.Column>
-          <Grid.Column>
-            <CityInfo cityIndex="city2" />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-      <Grid>
-      <AqInfoTable />
-      </Grid>
+    <Container
+      style={{ backgroundColor: "#3578fe", height: "100vh", width: "100%" }}
+    >
+      <div className="ui black "> Air Quality Assesment </div>
+      <AirQuality />
     </Container>
   );
 }
